@@ -1,6 +1,8 @@
 import platform
 import requests
 from datetime import datetime
+import time
+
 
 
 system_info = platform.uname()
@@ -27,6 +29,9 @@ print("Región:", location_info['region'])
 print("País:", location_info['country'])
 print("Servicio de Red:", location_info['org'])
 print("Ubicación aproximada:", location_info['loc'])
+time.sleep(4)
+
+
 
 
 current_time = datetime.now()
